@@ -15,7 +15,7 @@ http://13.126.174.52
 ## Screenshots
 
 ### Website
-![Website](Sahyadri-Cloud/{2BB1D56A-DF73-493F-A0EF-043CE831C775}.png)
+![Website]({2BB1D56A-DF73-493F-A0EF-043CE831C775}.png)
 
 ### AWS EC2 Instance
 ![EC2](Sahyadri-Cloud/{4CBA94D0-4736-4788-BDB3-860BF28D1915}.png)
