@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahyadri College of Engineering & Management (SCEM)</title>
+    <style>
+        /* Modern CSS Variables for easy color changes */
+        :root {
+            --primary: #0f172a;    /* Deep Slate */
+            --accent: #2563eb;     /* Cloud Blue */
+            --accent-light: #dbeafe;
+            --text-dark: #1e293b;
+            --text-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Hero Header Section */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
+            color: var(--text-light);
+            text-align: center;
+            padding: 5rem 2rem 6rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: #f1f5f9;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #93c5fd;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: -3rem auto 4rem auto;
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Student Profile Badge Section */
+        .profile-badge {
+            background: #ffffff;
+            max-width: 400px;
+            margin: 0 auto 2rem auto;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .profile-avatar {
+            background: var(--accent);
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .profile-info {
+            text-align: left;
+        }
+
+        .profile-info h3 {
+            font-size: 1.05rem;
+            color: var(--primary);
+        }
+
+        .profile-info p {
+            font-size: 0.85rem;
+            color: #64748b;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Vision Card */
+        .vision-card {
+            background: #ffffff;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin-bottom: 2rem;
+            border-top: 5px solid var(--accent);
+        }
+
+        .vision-card h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .vision-card p {
+            font-size: 1.2rem;
+            color: #475569;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Mission Section */
+        .mission-section {
+            margin-top: 3rem;
+        }
+
+        .mission-section h2 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .mission-section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: var(--accent);
+            margin: 0.5rem auto 0 auto;
+            border-radius: 2px;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Individual Mission Cards */
+        .mission-card {
+            background: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-number {
+            background: var(--accent-light);
+            color: var(--accent);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mission-card p {
+            color: #475569;
+            font-size: 1.05rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sahyadri Cloud</h1>
+        <p>Sahyadri College of Engineering & Management (SCEM)</p>
+    </header>
+
+    <div class="container">
+        
+        
+        <div class="profile-badge">
+            <div class="profile-avatar">S</div>
+            <div class="profile-info">
+                <h3>Shivananda</h3>
+                <p>USN: 4SF23CS205</p>
+            </div>
+        </div>
+
+        <!-- Vision Block -->
+        <section class="vision-card">
+            <h2>Our Vision</h2>
+            <p>"To be a premier institution in Technology and Management by fostering excellence in education, innovation, incubation and values to inspire and empower the young minds."</p>
+        </section>
+
+        <!-- Mission Block -->
+        <section class="mission-section">
+            <h2>Our Mission</h2>
+            <div class="mission-grid">
+                
+                <div class="mission-card">
+                    <div class="mission-number">1</div>
+                    <p>Creating an academic ambience to impart holistic education focusing on individual growth, integrity, ethical values and social responsibility.</p>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-number">2</div>
+                    <p>Develop skill based learning through industry-institution interaction to enhance competency and promote entrepreneurship.</p>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-number">3</div>
+                    <p>Fostering innovation and creativity through competitive environment with state-of-the-art infrastructure.</p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sahyadri Cloud. Designed by Shivananda.</p>
+    </footer>
+
+</body>
+</html>
