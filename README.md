@@ -216,19 +216,14 @@ Sahyadri-Cloud/
 
 ## Website Running on AWS EC2
 
-![Website](screenshots/website.png)
+![Website]({2BB1D56A-DF73-493F-A0EF-043CE831C775}.png)
 
 ---
 
 ## AWS EC2 Instance
 
-![EC2](screenshots/ec2-instance.png)
+![EC2]({4CBA94D0-4736-4788-BDB3-860BF28D1915}.png)
 
----
-
-## GitHub Repository
-
-![GitHub](screenshots/github-repository.png)
 
 ---
 
